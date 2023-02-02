@@ -43,6 +43,7 @@ a {
     /* No hyperlink underline or color */
     text-decoration: none;
     color: #000000;
+    justify-content: center; 
 }
 
 .products {
@@ -50,14 +51,31 @@ a {
     height: 190px;
     width: 16%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .product-images {
     border: 3px solid #000000;
 }
 
-figcaption {
+.captions {
     text-decoration: underline;
+    display: flex; 
+    width: 16%;
+    margin: 0 auto;
+    padding: 3px;
     text-align: left; 
+}
+
+.prices {
+    display: flex; 
+    height: 25px;
+    width: 16%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.products a {
+    display: flex; 
+    border: none; 
 }
