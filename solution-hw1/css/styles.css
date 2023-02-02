@@ -1,0 +1,63 @@
+body {
+    /* Set the default font family and font color */
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+  
+    /* Set the background color (white) */
+    background-color: #ffffff;
+}
+
+.logo {
+
+    width: 350px;
+    height: 200px;
+  
+    /* Small separation between logo and top of page */
+    margin-top: 30px;
+}
+
+hr {
+    /* Make the header line bolder than default */
+    height: 5px;
+    border-width: 0;
+    background-color: #000000;
+}
+
+.menu {
+    text-align: center; 
+} 
+
+mark {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center; 
+    font-size: 25px;
+}
+
+a { 
+    /* No hyperlink underline or color */
+    text-decoration: none;
+    color: #000000;
+}
+
+.products {
+    display: flex; 
+    height: 190px;
+    width: 16%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-images {
+    border: 3px solid #000000;
+}
+
+figcaption {
+    text-decoration: underline;
+    text-align: left; 
+}
