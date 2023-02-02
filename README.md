@@ -1,5 +1,4 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
-
-Repository link: `add the URL to this repository`
+Deployed website: `theChild06.github.io/pui-hw-ari-carden/` 
+Repository link: `https://github.com/theChild06/pui-hw-ari-carden` 
