@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Product Detail</title>
-  
+    <meta charset="UTF-8">
+    <head>
+        <title>Product Detail</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
   <body>
 
-    <h1>Other Page</h1>
+    <div>
+        <!-- Header -->
+        <a class="logo" href="./index.html">  
+            <img class="logo" alt="BunBun Bake Shop Logo" src="assets/logo-01.svg">
+        </a>
+        <hr>
+    </div>
 
-    <p>
-        Hello!
-    </p>
+    <div class="menu">
+        <a href="./index.html">
+            <mark>PRODUCTS</mark> 
+        </a>
+        <br><br>
+        <a href="./cart.html">CART</a>
+    </div>
+    <br><br><br><br>
+    <div class="title">Original cinnamon roll</div>
+    <br><br>
 
+    <div class="product-detail">
+        <div class="product-detail-item">
+            <img class="product-detail-image" alt="Photo of original cinnamon roll" src="assets/products/original-cinnamon-roll.jpg">
+        </div>
+        <br>
+        <div class="product-detail-description">Customize our delicious, hand-made cinnamon roll to your liking!</div>
+        <br><br><br>
+        <div class="product-detail-description">
+            Glazing:
+            <br>
+            <select name="glazing" id="glazing">
+                <option value="keepOriginal">Keep original</option>
+                <option value="sugarMilk">Sugar milk</option>
+                <option value="vanillaMilk">Vanilla milk</option>
+                <option value="doubleChocolate">Double chocolate</option>
+            </select>
+            <br><br>
+            Pack size:
+            <br>
+            <select name="packSize" id="packSize">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+            </select>
+        </div> 
+        <br><br><br>
+        <div class="product-detail-button"> 
+            <label for="addToCart">$ 2.49&nbsp;&nbsp;&nbsp;</label>
+                <button name="addToCart" id="addToCart">Add to Cart</button>
+        </div> 
+    </div>
+    
   </body>
 </html>

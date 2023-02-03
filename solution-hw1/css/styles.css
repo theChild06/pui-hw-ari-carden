@@ -7,10 +7,8 @@ body {
 }
 
 .logo {
-
     width: 350px;
     height: 200px;
-  
     /* Small separation between logo and top of page */
     margin-top: 30px;
 }
@@ -20,6 +18,10 @@ hr {
     height: 5px;
     border-width: 0;
     background-color: #000000;
+}
+
+hr.half {
+    width: 50%;
 }
 
 .menu {
@@ -46,13 +48,9 @@ a {
 .products {
     display: flex; 
     height: 190px;
-    width: 16%;
+    width: 190px;
     margin: 0 auto;
-    padding: 10px;
-}
-
-.products:hover {
-    background-color: yellow; 
+    padding: 3px;
 }
 
 .product-images {
@@ -62,7 +60,7 @@ a {
 .captions {
     text-decoration: underline;
     display: flex; 
-    width: 16%;
+    width: 190px;
     margin: 0 auto;
     padding: 3px;
     text-align: left; 
@@ -70,10 +68,10 @@ a {
 
 .prices {
     display: flex; 
-    height: 25px;
-    width: 16%;
+    height: 20px;
+    width: 190px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 3px;
 }
 
 .products a {
@@ -85,4 +83,93 @@ a {
 .product-images a {
     /* Maintain flex display when linking from images */
     display: flex; 
+}
+
+.menu-item {
+    margin: auto;
+    width: 200px;
+    margin-bottom: 20px; 
+} 
+
+.menu-item:hover {
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-detail {
+    margin: 0 auto;
+    width: 450px;
+}
+
+.product-detail-item {
+    display: flex; 
+} 
+
+.product-detail-image {
+    border: 3px solid #000000;
+    height: 450px;
+}
+
+.product-detail-description {
+    margin: 0 auto;
+    width: 200px;
+    text-align: left;
+    overflow-wrap: break-word;
+    font-size: 16px; 
+}
+
+.product-detail-button {
+    text-align: center;
+}
+
+button {
+    width: 110px;
+    height: 35px;
+
+    margin-top: 15px;
+    padding: 0;
+
+    font-size: 160; 
+    font-weight: 700;
+
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+label {
+    font-weight: bold;
+}
+
+.cart {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.cart-item {
+    display: flex; 
+} 
+
+.cart-images {
+    box-sizing: border-box;
+    height: 100px;
+    border: 3px solid #000000;
+}
+
+.cart-remove {
+    font-size: 8px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cart-description {
+    font-size: 16px;
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.cart-price {
+    font-size: 18px;
 }
