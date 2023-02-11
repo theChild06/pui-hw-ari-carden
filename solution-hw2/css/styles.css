@@ -6,11 +6,17 @@ body {
     color: #000000;
 }
 
-.logo {
-    width: 350px;
-    height: 200px;
-    /* Small separation between logo and top of page */
+.header {
+    display: flex;
+    width: 1200px;
+    height: 250px;
     margin-top: 30px;
+}
+
+.logo {
+    margin-left: 15px; 
+    width: 35%;
+    flex-shrink: 0;
 }
 
 hr {
@@ -18,14 +24,32 @@ hr {
     height: 5px;
     border-width: 0;
     background-color: #000000;
+    margin-right: -85px; 
 }
 
-hr.half {
-    width: 50%;
+hr.checkout { 
+    width: 70%; 
+    flex-shrink: 0; 
+    margin-right: -100px; 
+}
+
+.products-cart { 
+    margin-left: 25px;
+    margin-top: 35px;
+    height: 100px; 
+    text-align: right; 
+    padding-bottom: 100px;
+    flex-grow: 1; 
+    width: 65%; 
+    font-size: 22px; 
 }
 
 .menu {
+    display: flex; 
     text-align: center; 
+    width: 900px; 
+    padding-left: 115px; 
+    padding-right: 85px; 
 } 
 
 mark {
@@ -34,8 +58,9 @@ mark {
 }
 
 .title {
-    text-align: center; 
-    font-size: 25px;
+    width: 65%; 
+    text-align: left; 
+    font-size: 30px;
 }
 
 a { 
@@ -47,10 +72,10 @@ a {
 
 .products {
     display: flex; 
-    height: 190px;
-    width: 190px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
-    padding: 3px;
+    padding: 5px;
 }
 
 .product-images {
@@ -60,18 +85,22 @@ a {
 .captions {
     text-decoration: underline;
     display: flex; 
-    width: 190px;
-    margin: 0 auto;
-    padding: 3px;
+    height: 20px;
+    width: 300px;
+    padding-top: 3px; 
     text-align: left; 
+    font-size: 18px; 
+    margin-left: 5px; 
 }
 
 .prices {
     display: flex; 
     height: 20px;
-    width: 190px;
-    margin: 0 auto;
-    padding: 3px;
+    width: 300px;
+    font-size: 18px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 3px;
 }
 
 .products a {
@@ -87,8 +116,10 @@ a {
 
 .menu-item {
     margin: auto;
-    width: 200px;
+    width: 300px;
     margin-bottom: 20px; 
+    padding-right: 10px;
+    margin-right: 20px; 
 } 
 
 .menu-item:hover {
@@ -98,25 +129,23 @@ a {
 }
 
 .product-detail {
-    margin: 0 auto;
-    width: 450px;
-}
-
-.product-detail-item {
     display: flex; 
-} 
+    margin: 0 auto;
+    width: 1000px;
+}
 
 .product-detail-image {
     border: 3px solid #000000;
-    height: 450px;
+    height: 550px;
+    width: 60%; 
 }
 
 .product-detail-description {
-    margin: 0 auto;
-    width: 200px;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 40%;
     text-align: left;
-    overflow-wrap: break-word;
-    font-size: 16px; 
+    font-size: 28px; 
 }
 
 .product-detail-button {
@@ -124,34 +153,33 @@ a {
 }
 
 button {
-    width: 110px;
-    height: 35px;
-
+    width: 200px;
+    height: 50px;
     margin-top: 15px;
-    padding: 0;
-
     font-weight: bold;
-
+    font-size: 20px; 
     background-color: yellow;
     border: 2px solid black;
 }
 
 label {
     font-weight: bold;
+    font-size: 24px; 
+    margin-right: 10px; 
 }
 
 .cart {
-    margin: 0 auto;
-    width: 100px;
-}
-
-.cart-item {
     display: flex; 
+    width: 700px; 
+    margin-left: 460px; 
 } 
 
+.cart-item {
+    width: 12%; 
+}
+
 .cart-images {
-    box-sizing: border-box;
-    height: 100px;
+    height: 90px;
     border: 3px solid #000000;
 }
 
@@ -159,16 +187,35 @@ label {
     font-size: 8px;
     font-weight: bold;
     text-decoration: underline;
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    padding-right: 10px; 
 }
 
 .cart-description {
-    font-size: 16px;
-    text-align: center; 
-    margin: 0 auto;
+    font-size: 20px;
+    text-align: left; 
+    margin-left: 40px;
+    padding-top: 15px;
+    width: 60%;
 }
 
 .cart-price {
-    font-size: 18px;
+    font-size: 20px;
+    width: 20%;
+    margin-top: 30px; 
+}
+
+.total {
+    font-size: 24px; 
+    margin-right: 50px; 
+}
+
+.total-price { 
+    margin-top: -12px;
+}
+
+button.checkout { 
+    width: 150px; 
+    margin-right: 100px;
+    height: 40px;
 }
