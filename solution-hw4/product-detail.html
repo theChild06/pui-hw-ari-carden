@@ -4,7 +4,7 @@
         <title>Product Detail</title>
         <link rel="stylesheet" href="css/styles.css">
         <meta charset="UTF-8">
-        <script defer src="js/price.js"></script>
+        <script defer src="js/rolls.js"></script>
     </head>
 
   <body>
@@ -21,13 +21,13 @@
           <br><br>
           <hr>
           <br><br><br>
-          <div class="title">Original cinnamon roll</div>
+          <div class="title" id="detailTitle"></div>
         </div>
     </div>
     <br><br>
 
     <div class="product-detail">
-        <img class="product-detail-image" alt="Photo of original cinnamon roll" src="assets/products/original-cinnamon-roll.jpg">
+        <img class="product-detail-image" alt="Photo of cinnamon roll" id="productDetailImage">
         <br>
         <div class="product-detail-description">
             Customize our delicious, hand-made cinnamon roll to your liking!
@@ -44,7 +44,7 @@
             <br><br><br><br>
             <div class="product-detail-button"> 
                 <label for="addToCart" id="price">&nbsp;&nbsp;&nbsp;</label>
-                    <button name="addToCart" id="addToCart">Add to Cart</button>
+                    <button name="addToCart" id="addToCart" onclick="addToCart()">Add to Cart</button>
             </div>
         </div> 
     </div>
