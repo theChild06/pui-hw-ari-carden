@@ -108,7 +108,7 @@ for (const [pack, price] of Object.entries(packSizes)) {
   
 selectGlaze.addEventListener('change', glazingChange);
 selectPack.addEventListener('change', packSizeChange);
-  
+
 const cart = [];
 
 class Roll {
@@ -117,7 +117,7 @@ class Roll {
         this.type = type;
         this.glazing = glazing;
         this.size = size;
-        this.basePrice = base;
+        this.base = base;
     }
 }
 

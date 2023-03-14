@@ -4,6 +4,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
+    <script defer src="js/cart.js"></script>
   </head>
   
   <body>
@@ -25,56 +26,19 @@
     </div>
     <br><br><br><br>
 
-
-    <div class="cart">
-        <div class="cart-item">
-            <img class="cart-images" alt="Photo of original cinnamon roll" src="assets/products/original-cinnamon-roll.jpg">
-            <br>
-            <div class="cart-remove">Remove</div>
-        </div>
-        <br>
-        <div class="cart-description">
-            Original Cinnamon Roll
-            <br>
-            Glazing: Keep original
-            <br>
-            Pack Size: 1
-            <br><br>
-        </div>
-        <div class="cart-price">&nbsp;&nbsp;$ 2.49</div>
-    </div>
-
-    <br>
-
-    <div class="cart">
-        <div class="cart-item">
-            <img class="cart-images" alt="Photo of double chocolate cinnamon roll" src="assets/products/double-chocolate-cinnamon-roll.jpg">
-            <br>
-            <div class="cart-remove">Remove</div>
-        </div>
-        <br>
-        <div class="cart-description">
-            Double Chocolate Cinnamon Roll
-            <br>
-            Glazing: Sugar milk
-            <br>
-            Pack Size: 6
-            <br><br>
-        </div>
-        <div class="cart-price">$ 27.45</div>
-    </div>
+    <div id="incart"></div>
 
     <br>
     <hr class="checkout">
-    <div class="cart">
+    <div class="cart" id="checkout">
       <div class="cart-item"></div>
       <div class="cart-description">
         <div class="total">Total</div>
       </div>
       <div class="cart-price">
-        <div class="total-price">$ 29.94
+        <div class="total-price"><div id="total-price">$ 29.94</div>
           <br><br>
-          <button class="checkout" name="checkout" id="checkout">Checkout</button>
+          <button class="button-styled" name="checkout" id="checkout">Checkout</button>
         </div> 
       </div>
     </div>
