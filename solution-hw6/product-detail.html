@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Detail</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8">
+        <script defer src="js/rolls.js"></script>
+    </head>
+
+  <body>
+
+    <div class="header">
+        <a class="logo" href="./index.html">  
+            <img alt="BunBun Bake Shop Logo" src="assets/logo-01.svg">
+        </a>
+        <div class="products-cart">
+          <a href="./index.html">
+            <mark>PRODUCTS</mark> 
+          </a> 
+          <a href="./cart.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CART&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <br><br>
+          <hr>
+          <br><br><br>
+          <div class="title" id="detailTitle"></div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="product-detail">
+        <img class="product-detail-image" alt="Photo of cinnamon roll" id="productDetailImage">
+        <br>
+        <div class="product-detail-description">
+            Customize our delicious, hand-made cinnamon roll to your liking!
+            <br><br><br>
+            Glazing:
+            <br>
+            <select id="glazing">
+            </select>
+            <br><br>
+            Pack size:
+            <br>
+            <select id="pack">
+            </select>
+            <br><br><br><br>
+            <div class="product-detail-button"> 
+                <label for="addToCart" id="price">&nbsp;&nbsp;&nbsp;</label>
+                    <button class="button-styled" name="addToCart" id="addToCart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div> 
+    </div>
+
+  </body>
+</html>
