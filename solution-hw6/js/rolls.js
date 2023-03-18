@@ -52,7 +52,7 @@ class Roll {
 }
 
 
-if (window.location.pathname == '/solution-hw6/product-detail.html') {
+if (window.location.href.indexOf("product-detail.html") > -1) {
     // get roll type from URL 
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);
@@ -130,7 +130,7 @@ if (window.location.pathname == '/solution-hw6/product-detail.html') {
 }
 
 
-if (window.location.pathname == '/solution-hw6/cart.html') {
+if (window.location.href.indexOf("cart.html") > -1) {
     let itemTotalRounded;
     function cartDisplay(roll) {
         const incart = document.getElementById("incart");
