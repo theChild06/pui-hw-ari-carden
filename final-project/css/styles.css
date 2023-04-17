@@ -1,0 +1,65 @@
+body {
+    /* Set default font family and font color */
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+}
+
+.navbar {
+    display: flex; 
+    height: 30px;
+    width: 100%; 
+    background-color: #002351; 
+}
+
+.navbar_text {
+    font-size: 20px; 
+    margin-left: 3%; 
+    margin-right: 3%;
+    color: white; 
+}
+
+.navbar_text_highlighted {
+    font-size: 20px; 
+    margin-left: 3%; 
+    margin-right: 3%;
+    color: #5ce1e6;
+}
+
+.welcome_message {
+    margin-top: 5%; 
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+    text-align: center; 
+}
+
+a { 
+    /* No hyperlink underline or color */
+    text-decoration: none;
+    color: inherit;
+}
+
+.choose_a_major {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+
+.major_options {
+    display: inline-block;
+    padding: 30px 40px;
+    border-radius: 25px;
+    background-color: #002351;
+    font-size: 20px;
+    color: white;
+}
+
+.major_options:hover {
+    background-color: #004aad;
+    font-weight: bold;
+    cursor: pointer;
+}
