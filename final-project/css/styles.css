@@ -35,6 +35,16 @@ body {
     text-align: center; 
 }
 
+.semester_title {
+    margin-top: 5%; 
+    margin-left: 5%; 
+    margin-bottom: 0; 
+    font-size: 20px;
+    text-align: left; 
+    color: #5ce1e6; 
+    font-weight: bold;
+}
+
 a { 
     /* No hyperlink underline or color */
     text-decoration: none;
@@ -58,28 +68,12 @@ a {
     cursor: pointer;
 }
 
-.six_options {
+.bubbles {
     display: flex;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 100px;
-}
-
-.four_options {
-    display: flex; 
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 100px;
-}
-
-.five_options {
-    display: flex; 
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 50px;
 }
 
 .class_number {
