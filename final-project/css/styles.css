@@ -4,6 +4,7 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: black;
+    background-color: rgb(232, 233, 233); 
 }
 
 .navbar {
@@ -41,7 +42,7 @@ body {
     margin-bottom: 0; 
     font-size: 20px;
     text-align: left; 
-    color: #5ce1e6; 
+    color: #002351; 
     font-weight: bold;
 }
 
@@ -58,8 +59,8 @@ a {
     background-color: #002351;
     font-size: 20px;
     color: white;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .major_class_options:hover {
@@ -83,4 +84,29 @@ a {
 
 .class_title {
     font-size: 16px; 
+}
+
+.class_header {
+    display: flex; 
+    margin-left: 20px;
+    font-size: 25px; 
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.class_page_number {
+    color: #002351;
+    text-align: left; 
+    margin-right: 30%; 
+}
+
+.class_page_title {
+    color: #5ce1e6;
+    text-align: center;
+}
+
+.class_page_units {
+    color: #002351;
+    text-align: right;
+    margin-left: 30%;
 }
