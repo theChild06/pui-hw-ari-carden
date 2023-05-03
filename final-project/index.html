@@ -4,11 +4,12 @@
     <title>21-120</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
 
   <body>
     <div class="welcome_message"> 
-      Choose an engineering primary major (to visualize) or Course List (to find information about every course mentioned on this site) below.
+      Choose an engineering primary major (to visualize) or Course List (to find information about every course mentioned on this site).
     </div>
     <div class="bubbles">
       <a href="cheme.html">
@@ -30,5 +31,42 @@
         <div class="major_class_options">Course List</div>
       </a>
     </div>
+
+    <div class="welcome_message"> 
+      The following pie chart represents how many courses listed on this website are from each CIT major department. Green represents ChemE, blue represents Civil & Environmental, orange represents ECE, purple represents MechE, and red represents MSE.
+    </div>
+    <div class="welcome_message"> 
+    </div>
+
+    <svg width="400" height="300"> </svg>
+    <script>
+      var numbers = [17, 23, 8, 18, 13];
+  
+      var svg = d3.select("svg"),
+          w = svg.attr("width"),
+          h = svg.attr("height"),
+          r = Math.min(w, h) / 2,
+          g = svg.append("g").attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+  
+      var colors = d3.scaleOrdinal(['#4daf4a','#377eb8','#ff7f00','#984ea3','#e41a1c']);
+      
+      var pie = d3.pie();
+
+      var arc = d3.arc()
+                  .innerRadius(0)
+                  .outerRadius(r);
+
+      var arcs = g.selectAll("arc")
+                  .data(pie(numbers))
+                  .enter()
+                  .append("g")
+                  .attr("class", "arc")
+  
+      arcs.append("path")
+          .attr("fill", function(d, i) {
+              return colors(i);
+          })
+          .attr("d", arc);
+    </script>
   </body>
 </html>
